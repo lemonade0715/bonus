@@ -4,14 +4,10 @@
 
 int main()
 {
-    // 初始化
-    initscr();
-    // 在螢幕上印出 Hello World!
-    printw("Hello world!");
-    refresh();
-    // 等待使用者輸入
-    getch();
-    // 關閉
-    endwin();
+    initscr();               // 初始化
+    printw("Hello world!");  // 在螢幕上印出 Hello World!
+    refresh();               // 更新螢幕
+    getch();                 // 等待使用者輸入
+    endwin();                // 結束 curses 模式
     return 0;
 }
